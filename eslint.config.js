@@ -11,8 +11,9 @@ export default tseslint.config(
       js.configs.recommended,
       ...tseslint.configs.recommended,
       'plugin:@tanstack/eslint-plugin-query/recommended',
+      'plugin:prettier/recommended',
     ],
-    files: ['**/*.{ts,tsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
